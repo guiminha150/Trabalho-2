@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Netel</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Netel_files/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="menu">
+        <img src="./Netel_files/logo.png" alt="Logo">
+        <article>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5501/proj2/netel/index.html#">Home</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5501/proj2/netel/index.html#">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5501/proj2/netel/index.html#">Portifólio</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5501/proj2/netel/index.html#">Contatos</a>
+                </li>
+            </ul>
+        </article>
+    </header>
+    <section id="Bem-Vindo">
+        <h1>Bem-Vindo A Netel</h1>
+    </section>
+    <section id="txtequipe">
+        <h2>Nossa Equipe</h2>
+    </section>
+   <section id="nossaequipe">
+       <article class="equipe" id="mulher1">
+            <img src="./Netel_files/team1.jpg" alt="xx" class="mulher">
+            <h3>Júlia Moshimoto</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae minima nihil totam doloribus ipsum, quas hic voluptate temporibus consectetur a quasi adipisci excepturi asperiores, culpa laborum, obcaecati quisquam illo. Minus.</p>
+            <button>Meu Linkedin</button>
+       </article>
+       <article class="equipe" id="mulher2">
+            <img src="./Netel_files/team2.jpg" alt="" class="mulher">
+            <h3>Marta Han</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ipsa suscipit laudantium inventore nisi similique exercitationem obcaecati beatae pariatur magni incidunt, eaque iure, doloribus placeat. Voluptas aut necessitatibus maiores alias!</p>
+            <button>Me Linkedin</button>
+       </article>
+       <article class="equipe" id="mulher3">
+            <img src="./Netel_files/team3.jpg" alt="xx" class="mulher">
+            <h3>Marisa Chan</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam pariatur natus quae repellat ullam impedit. Nisi at animi quae odit, laboriosam officia quos ipsam cupiditate earum ducimus possimus, tempore ullam?</p>
+            <button>Meu Linkedin</button>    
+       </article>
+   </section>
+  
+       <article>
+
+       </article>
+       <article>
+           <img src="./Netel_files/about.jpg" alt="sobre">
+           <h1>Nosso negócio</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quaerat culpa illum laborum tempore aliquam porro vitae voluptatum esse tenetur, exercitationem ad voluptate aperiam voluptatem. Saepe repellendus maiores recusandae delectus?
+            <button>Leia Mais</button>
+       </p></article>
+  
+   <article>
+        <h3>Projetos recentes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor illum tenetur magni distinctio, quod ad nesciunt, facere quasi doloremque minus sapiente dolorem numquam sequi nobis laborum, aut quam. Nisi?
+        </p>
+   </article>
+   <section>
+        <article>
+            <img src="./Netel_files/portfolio1.jpg" alt="">
+        </article>
+
+        <article>
+            <img src="./Netel_files/portfolio2.jpg" alt="">
+        </article>
+
+        <article>
+            <img src="./Netel_files/portfolio3.jpg" alt="">
+        </article>
+
+        <article>
+            <img src="./Netel_files/portfolio4.jpg" alt="">
+        </article>
+
+        <article>
+            <img src="./Netel_files/portfolio5.jpg" alt="">
+        </article>
+
+        <article>
+            <img src="./Netel_files/portfolio6.jpg" alt="">
+        </article>
+            
+
+    </section>
+    
+    <article>
+        <button>Veja Mais</button>
+    </article>
+
+    <footer>
+
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
